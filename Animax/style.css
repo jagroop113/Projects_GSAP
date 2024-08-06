@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+  
+}
+body{
+    background-color: beige;
+}
+/* Side bar hai bro */
+#navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 15px;
+    
+}
+#navbar>h3{
+    font-size: 25px;
+}
+#navbar>i{
+    font-size: 25px;
+}
+#full{
+    height: 100vh;
+    position: absolute;
+    width: 35vw;
+    background-color: #ffffff77;
+    top:0;
+    right:-40vw;
+    backdrop-filter: blur(10px);
+   z-index: 99;
+}
+#full>h4{
+    font-size: 40px;
+    padding: 25px 70px;
+    color: black;
+}
+#full>i{
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+/* MAIN PAGE OR HOME PAGE */
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   
+}
+#video-div{
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left:0;
+    background-color: black;
+    z-index: 3; 
+    overflow: hidden;
+    clip-path: circle(var(--clip) at 50% 50%);
+    
+}
+#video-div>h2{
+ display: inline-block;
+ position: absolute;
+ bottom:0;
+ left: 20%;
+ font-size: 15vw;
+ color: white;
+ font-weight: 900;
+ transform: translateY(15%);
+}
+#ani span{
+    position: relative;
+    z-index: 3;
+}
+nav{
+    width: 96%;
+    height: 5vh;
+    padding: 2vw;
+    position: absolute; 
+    color: white;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+nav h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+#video-div video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    position:absolute; 
+}
+#marquee-container{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+}
+#slider{
+    position: absolute;
+    height: 50vh;
+    top: 30%;
+    left: 10%;
+    gap: 20px;
+    transform: translateX(-8%);
+   
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    white-space:wrap;
+    margin-top: 9px;
+    transform: translateX(-5%);
+}
+.imgdiv{
+    width: 3rem;
+    height: 3rem;
+    background-color: yellowgreen;
+    border-radius: 50%;
+}
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.elem>h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* Page 2 */
+#page2{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#about{
+ padding: 10px 15px;
+
+}
+#about h3{
+    font-size: 3vw;
+    font-weight: 500;
+}
+#para{
+    padding: 10px 15px;
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+    height: 40%;
+    
+}
+#para h4{
+    font-weight: 400;
+}
+#page2>h3{
+    margin-top: 8vw;
+    font-size: 3rem;
+    width: 90%;
+    padding: 10px 15px;
+}
+
+/* PAGE 3 */
+#page3{
+    min-width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /* overflow: hidden; */
+    color: white;
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+}
+.top-anime{
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    /* overflow: hidden; */
+    color: white;
+}
+.photo>img{
+    height: 50vh;
+    width: 15vw;
+    position: relative;
+    left: 50px;
+}
+
+.header>h3{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.header>p{
+    font-family: 'remixicon';
+}
+.header{
+    height: 50%;
+    width:70% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* PAGE 4 */
+#page4{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
